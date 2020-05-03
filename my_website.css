@@ -9,16 +9,26 @@ div{height: 100vh; width: 100vw;}
 #horizontalmenu {  list-style-type: none;  margin: 0;  padding: 0;  overflow: hidden;  position: fixed; z-index:1; width: 100%; }
 li {  float: left;
 }
-a {  display: block;  padding: 8px;  font-weight: bold;  color: white;  text-decoration: none;
+li a {  display: block;  padding: 8px;  font-weight: bold;  color: white;  text-decoration: none;
 }
-li a:hover {  color: #3e8914;
+li a:hover {  /*color: #3e8914;*/ color:black;
 }
 #homepage{background-color: rgb(7,59,76); height: 30em; width: 100%; position: relative;}
 #name{ font-weight: bold; font-size: 3em; position: absolute; top: 5em; margin-left: 50%; padding-right:1em; display: inline-block; float: left; }
+#name #cognome {color: rgb(17,138,178);}
 #businessman {position: absolute;  margin-left: 10%; top:4em; display: inline-block; float: left;}
 #about{background-color: rgb(17,138,178); position: relative;  height: 30em; width: 100%; }
+#playlist{position: absolute; margin-left: 9%; top: 5.5em;}
 #aboutText{margin-left: 40%; margin-right: 5%; position: absolute; top: 8em;}
-#career{background-color: rgb(6,214,260); height: 30em; width: 100%; position:relative;}
+#aboutText a{color:#245501}
+#career{/*background-color: rgb(6,214,260)*/ background-color:#245501; height: 30em; width: 100%; position:relative;}
 #careerText{margin-left: 40%; margin-right: 5%; position: absolute; top: 8em;}
+#careerText a{color: rgb(17,138,178);}
 #travel{background-color: #ffd166; position: relative;  height: 30em; width: 100%; }
-#contacts{background-color: rgb(239,71,111); position: relative;  height: 15em; width: 100%; }
+#contacts{background-color: rgb(239,71,111); position: relative;  height: 30em; width: 100%; }
+.pictures{position: absolute; max-width: 40%; max-height: 40%;box-shadow: 8px 8px 3px #929292/*#888888*/;}
+.pictures:hover{max-width: 70%; max-height: 70%; z-index:1; box-shadow: none;}
+ #verona{ top: 2em; margin-left: 5%; transform: rotate( 5deg); -ms-transform: rotate(5deg); -webkit-transform: rotate(5deg);}
+ #meteora{top: 2em; margin-left: 27%;transform: rotate( -5deg); -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg);}
+ #stoccolma{ top: 14em; margin-left: 7%; transform: rotate( -3deg); -ms-transform: rotate(-3deg); -webkit-transform: rotate(-3deg);}
+ #plitvice{ top: 14em; margin-left: 30%; transform: rotate( 2deg); -ms-transform: rotate(2deg); -webkit-transform: rotate(2deg);}

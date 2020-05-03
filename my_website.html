@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="my_website.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link href="http://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
 	<style>
 	body {
     	font-family: 'Montserrat';font-size: 22px;
@@ -15,6 +16,7 @@
 </head>
 <body>
 <ul id="horizontalmenu">
+	<li><a href="#homepage">HOME</a></li>
   <li><a href="#about">ABOUT</a></li>
   <li><a href="#career">CAREER</a></li>
   <li><a href="#travel">TRAVEL</a></li>
@@ -22,23 +24,32 @@
 </ul>
 <div id="homepage">
 <img src="businessman.png" alt="Businessman" id="businessman">
-<h1 id ="name">MICHELANGELO<br>BARULLI</h1>
+<h1 id ="name">MICHELANGELO<br><span id="cognome">BARULLI</span></h1>
 </div>
 <div id= "about">
+	<iframe id="playlist" src="https://open.spotify.com/embed/playlist/6qmN8XMmRJfzbYGQRqOs2x" width="280" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 	<p id = "aboutText">Mi chiamo Michelangelo Barulli. Sono uno studente del Politecnico di Torino,
-	al terzo anno di Ingegneria Gestionale L9. Sono nato a Castiglione del Lago, sulle sponde del Lago Trasimeno.
+	al terzo anno di Ingegneria Gestionale L9. Faccio parte del <a href="https://didattica.polito.it/percorso_giovani_talenti/home">
+	Percorso per Giovani Talenti</a> finanziato
+	da CRT. Sono nato a Castiglione del Lago, sulle sponde del Lago Trasimeno.
 	Sono diplomato con votazione di 100 e lode presso il Liceo Scientifico Italo Calvino di Città della Pieve (PG).
 	Amo viaggiare: scorri per vedere una raccolta delle mie foto in giro per il mondo!
 </p>
 </div>
 <div id="career">
-		<p id="careerText">Attualmente sto svolgendo un tirocinio curricolare come Data Scientist Intern presso
-			SmartData@PoliTo, un centro interdipartimentale del Politecnico di Torino. Mi sto occupando di e-mobility.
+		<p id="careerText">Attualmente sto svolgendo un tirocinio curricolare come Data Scientist Intern presso <a href="https://smartdata.polito.it/">SmartData</a>,
+			un centro interdipartimentale del Politecnico di Torino. Sto lavorando
+			su un simulatore del comportamento di flotte di vehicle sharing.
 			Sono un esperto del linguaggio Java, conosco bene C e SQL. Sto imparando HTML, CSS, Javascript e Python.</p>
 </div>
 <div id="travel">
+  <img class = "pictures" id = "verona" src="verona.png">
+	<img class = "pictures" id = "meteora" src ="meteora.png">
+	<img class = "pictures" id = "stoccolma" src = "stoccolma.png">
+	<img class = "pictures" id = "plitvice" src = "plitvice.png">
 </div>
 <div id="contacts">
+
 </div>
 </body>
 </html>
