@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>Michelangelo Barulli</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="my_website.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -23,11 +25,19 @@
   <li><a href="#contacts">CONTACTS</a></li>
 </ul>
 <div id="homepage">
-<img src="businessman.png" alt="Businessman" id="businessman">
-<h1 id ="name">MICHELANGELO<br><span id="cognome">BARULLI</span></h1>
+	<img src="businessman.png" alt="Businessman" id="businessman">
+
+	<h1 id ="name">MICHELANGELO<br><span id="cognome">BARULLI</span></h1>
+	<div id = "socialmedialinks">
+		<a href="https://www.facebook.com/michelangelo.barulli" class="fa fa-facebook"></a>
+		<a href="https://www.linkedin.com/in/michelangelo-barulli-591423195/" class="fa fa-linkedin"></a>
+		<a href="https://www.instagram.com/baru98/?hl=it" class="fa fa-instagram"></a>
+	</div>
 </div>
 <div id= "about">
-	<iframe id="playlist" src="https://open.spotify.com/embed/playlist/6qmN8XMmRJfzbYGQRqOs2x" width="280" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	<!--<iframe id="playlist" src="https://open.spotify.com/embed/playlist/6qmN8XMmRJfzbYGQRqOs2x" width="280" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>-->
+	<img class = "pictures" id = "castiglioneDelLago" src="castiglioneDelLago.png" alt ="Panorama del Lago Trasimeno">
+	<img class = "pictures" id = "torino" src ="torino.png" alt ="Torino dal Monte dei Cappuccini">
 	<p id = "aboutText">Mi chiamo Michelangelo Barulli. Sono uno studente del Politecnico di Torino,
 	al terzo anno di Ingegneria Gestionale L9. Faccio parte del <a href="https://didattica.polito.it/percorso_giovani_talenti/home">
 	Percorso per Giovani Talenti</a> finanziato
@@ -37,19 +47,61 @@
 </p>
 </div>
 <div id="career">
+		<div id = "articleBox">
+			<img id = "carsharing" src="carsharing.jpg" alt= "Car sharing">
+			<p id = "articleText"><a href="https://smartdata.polito.it/a-multifaceted-characterization-of-free-floating-carsharing-service-usage/">A Multifaceted Characterization of Free-Floating CarSharing Service usage</a><br>
+			After having witnessed the diffusion of car sharing systems during the lastdecade, the research...
+			<a href="https://smartdata.polito.it/a-multifaceted-characterization-of-free-floating-carsharing-service-usage/">Continue reading &raquo;</a></p>
+		</div>
 		<p id="careerText">Attualmente sto svolgendo un tirocinio curricolare come Data Scientist Intern presso <a href="https://smartdata.polito.it/">SmartData</a>,
 			un centro interdipartimentale del Politecnico di Torino. Sto lavorando
-			su un simulatore del comportamento di flotte di vehicle sharing.
+			su un simulatore del comportamento di flotte di vehicle sharing. Se sei interessato all'argomento, dai un'occhiata all'articolo qui a fianco!
 			Sono un esperto del linguaggio Java, conosco bene C e SQL. Sto imparando HTML, CSS, Javascript e Python.</p>
 </div>
 <div id="travel">
-  <img class = "pictures" id = "verona" src="verona.png">
-	<img class = "pictures" id = "meteora" src ="meteora.png">
-	<img class = "pictures" id = "stoccolma" src = "stoccolma.png">
-	<img class = "pictures" id = "plitvice" src = "plitvice.png">
+  <img class = "pictures" id = "verona" src="verona.png" alt ="Panorama di Verona">
+	<img class = "pictures" id = "meteora" src ="meteora.png" alt ="Monasteri di Meteora">
+	<img class = "pictures" id = "stoccolma" src = "stoccolma.png" alt= "Panorama di Stoccolma">
+	<img class = "pictures" id = "plitvice" src = "plitvice.png" alt="Laghi di Plitvice">
 </div>
 <div id="contacts">
+	<footer class="footer-distributed">
+				<div class="footer-left">
+					<h3>Michelangelo Barulli</h3>
+					<p class="footer-links">
+						<a href="#homepage" class="link-1">Home</a>
+						<a href="#about">About</a>
+						<a href="#career">Career</a>
+						<a href="#travel">Travel</a>
+					</p>
+					<p class="footer-company-name">Michelangelo Barulli © 2020</p>
+				</div>
+				<div class="footer-center">
 
+						<i class="fa fa-map-marker"></i>
+						<p><span>Corso Trapani 47</span> Torino, IT</p>
+						<br>
+
+						<i class="fa fa-phone"></i>
+						<p>+39 3926164526</p>
+						<br>
+						<i class="fa fa-envelope"></i>
+						<p><a href="mailto:michelangelobaru@gmail.com">support@company.com</a></p>
+
+				</div>
+				<div class="footer-right">
+					<p class="footer-company-about">
+						<span>About the website</span>
+						Questo website è stato creato per uno specifico progetto inerente alla piattaforma StartToImpact
+					</p>
+					<div class="footer-icons">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-github"></i></a>
+					</div>
+				</div>
+			</footer>
 </div>
 </body>
 </html>
