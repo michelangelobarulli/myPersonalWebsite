@@ -1,102 +1,317 @@
 body{   color:#FFFFF0;
 }
-html,body{ height: 100%; width: 100%; margin:0;    padding: 0px;   overflow-x: hidden; }
+html,body{ height: 100%;
+width: 100%;
+margin:0;
+padding: 0px;
+overflow-x: hidden;
+}
 h1, h2, p {
     margin: 0;
     text-align: justify;
     font-size: 0.9em;
 }
-.menu{display:none;}
-#mobilemenu{display:none;}
-p{line-height: 2em;}
-div{height: 100vh; width: 100vw;}
-#horizontalmenu { background-color: #051923; opacity: 0.9;list-style-type: none;  margin: 0;  padding: 0;  overflow: hidden;  position: fixed; z-index:1; width: 100%; }
-li {  float: left;
+a{
+  text-decoration: none;
 }
-li a {  opacity: 1;display: block;  padding: 8px;  font-weight: bold;  color: white;  text-decoration: none;
+.menu{
+  display:none;
 }
-li a:hover {  opacity: 0.5;
+#mobilemenu{
+  display:none;
 }
-#santamariadileucapiccola{display:none;}
-#homepage{background-color: #003554; height: 30em; width: 100%; position: relative;}
-#name{ font-weight: bold; font-size: 2.5em; position: absolute; top: 2.8em; margin-left: 50%; margin-right:2em; display: inline-block; float: left; }
-#name #cognome {color: rgb(17,138,178);}
-#stoccolmabackground {width: 100vw; height: 100vh; z-index: -1; opacity: 0.7;}
-#socialmedialinks{position: absolute; top: 16em; margin-left: 50%;}
-.fa {  padding: 15px;  font-size: 30px;  width: 30px;  text-align: center;  text-decoration: none;  margin: 5px 2px;  border-radius: 50%;}
-.fa:hover {    opacity: 0.7;}
-.fa-facebook {  background: #3B5998;  color: white;}
-.fa-linkedin {  background: #007bb5;  color: white;}
-.fa-instagram {  background: #125688;  color: white;}
-#about{background-color: #003554; position: relative;  height: 30em; width: 100%; }
-#playlist{position: absolute; margin-left: 9%; top: 5.5em;}
-#about .pictures{box-shadow: 8px 8px 3px #051923}
-#castiglioneDelLago{top: 2em; margin-left: 7%;}
-#torino{top: 14em; margin-left: 12%;}
-.aboutText{margin-left: 40%; margin-right: 5%; position: absolute; top: 8em;}
-#aboutTextTitle{top: 1.6em;#051923; margin-left: 60%; font-size:2.5em; color: #00a6fb;}
-.aboutText a{color:#00a6fb}
-#career{ background-color:#006494; height: 30em; width: 100%; position:relative;}
-#articleBox{position: absolute; top: 5em; margin-left: 7%; width: 26vw; height: auto; background-color: #FFFFF0; border-radius: 1em;}
-#carsharing{display:block;margin: 2vh auto; width: 23vw; height: auto;  border-radius: 0.7em;}
-#articleBox p{font-size: 0.7em; margin-left: 1vw; color: black; margin-right: 1vw;}
-#articleBox a{color: #006494; font-style: bold;}
-#careerText{margin-left: 47%; margin-right: 5%; position: absolute; top: 6.5em;}
-#careerText a{color: #00a6fb}
-#travel{background-color: #0582ca; position: relative;  height: 30em; width: 100%; }
-.pictures{position: absolute; width: 20vw; height: auto;box-shadow: 8px 8px 3px #051923/*#888888*/;}
-.pictures:hover{width:33vw; height: auto; z-index:1; box-shadow: none;}
- #verona{ top: 9vh; margin-left: 5%; transform: rotate( 5deg); -ms-transform: rotate(5deg); -webkit-transform: rotate(5deg);}
- #meteora{top: 9vh; margin-left: 27%;transform: rotate( -5deg); -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg);}
- #stoccolma{ top: 51vh; margin-left: 7%; transform: rotate( -3deg); -ms-transform: rotate(-3deg); -webkit-transform: rotate(-3deg);}
- #plitvice{ top: 51vh; margin-left: 30%; transform: rotate( 2deg); -ms-transform: rotate(2deg); -webkit-transform: rotate(2deg);}
- .footer-distributed{	height: 37vh; width: 100%; background-color: #00a6fb;	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12); 	box-sizing: border-box;
- 	text-align: left; 	font: bold 16px sans-serif; 	padding: 20px; overflow: hidden;
+p{
+  line-height: 2em;
+}
+div{
+  height: 100vh;
+  width: 100vw;
+}
+#horizontalmenu {
+  background-color: #051923;
+  opacity: 0.9;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index:1;
+  width: 100vw;
+}
+li {
+  float: left;
+}
+li a {
+  opacity: 1;
+  display: block;
+  padding: 8px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+li a:hover {
+  opacity: 0.5;
+}
+#santamariadileucapiccola{
+  display:none;
+}
+#homepage{
+  background-color: #003554;
+  height: 30em;
+  width: 100%;
+  position: relative;
+}
+#name{
+  font-weight: bold;
+  font-size: 2.5em;
+  position: absolute;
+  top: 2.8em;
+  margin-left: 50%;
+  margin-right:2em;
+  display: inline-block;
+  float: left;
+}
+#name #cognome {
+  color: rgb(17,138,178);
+}
+#stoccolmabackground {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.7;
+}
+#socialmedialinks{
+  position: absolute;
+  top: 16em;
+  margin-left: 50%;
+}
+#author{
+  bottom:1.2em;
+  right: 0.7em;
+  width: 12vw;
+  height: auto;
+}
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+#about{
+  background-color: #003554;
+  position: relative;
+  height: 30em;
+  width: 100%;
+}
+#about .pictures{
+  box-shadow: 8px 8px 3px #051923;
+}
+#castiglioneDelLago{
+  top: 1.8em;
+  margin-left: 7%;
+}
+#torino{
+  top: 14.9em;
+  margin-left: 12%;
+}
+.aboutText{
+  margin-left: 40%;
+  margin-right: 5%;
+  position: absolute;
+  top: 4.5em;
+}
+.aboutText a{
+  color:#00a6fb;
+}
+#career{
+  background-color:#006494;
+  height: 30em;
+  width: 100%;
+  position:relative;
+}
+#articleBox{
+  position: absolute;
+  top: 5em;
+  margin-left: 7%;
+  width: 26vw;
+  height: auto;
+  background-color: #FFFFF0;
+  border-radius: 1em;
+}
+#carsharing{
+  display:block;
+  margin: 2vh auto;
+  width: 23vw;
+  height: auto;
+  border-radius: 0.7em;
+}
+#articleBox p{
+  font-size: 0.7em;
+  margin-left: 1vw;
+  color: black;
+  margin-right: 1vw;
+}
+#articleBox a{
+  color: #006494;
+  font-weight: bold;
+}
+#continueReading{
+  text-decoration: underline;
+}
+#careerText{
+  margin-left: 47%;
+  margin-right: 5%;
+  position: absolute;
+  top: 6.5em;
+}
+#careerText a{
+  color: #00a6fb;
+}
+#travel{
+  background-color: #0582ca;
+  position: relative;
+  height: 30em;
+  width: 100%;
+}
+#travelText{
+  position:absolute;
+  width: 40vw;
+  height: auto;
+  margin-left: 55%;
+  margin-right: 5%;
+  top: 5em;
+}
+.pictures{
+  position: absolute;
+  width: 20vw;
+  height: auto;
+  box-shadow: 8px 8px 3px #051923;
+}
+.pictures:hover{
+  width:33vw;
+  height: auto;
+  z-index:1;
+  box-shadow: none;
+}
+ #verona{
+   top: 9vh;
+   margin-left: 5%;
+   transform: rotate( 5deg);
+   -ms-transform: rotate(5deg);
+   -webkit-transform: rotate(5deg);
+ }
+ #meteora{
+   top: 9vh;
+   margin-left: 27%;
+   transform: rotate( -5deg);
+   -ms-transform: rotate(-5deg);
+   -webkit-transform: rotate(-5deg);
+ }
+ #stoccolma{
+   top: 51vh;
+   margin-left: 7%;
+   transform: rotate( -3deg);
+   -ms-transform: rotate(-3deg);
+   -webkit-transform: rotate(-3deg);
+ }
+ #plitvice{
+   top: 51vh;
+   margin-left: 30%;
+   transform: rotate( 2deg);
+   -ms-transform: rotate(2deg);
+   -webkit-transform: rotate(2deg);
+ }
+ .footer-distributed{
+   height: 37vh;
+   width: 100%;
+   background-color: #00a6fb;
+   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+   box-sizing: border-box;
+ 	 text-align: left;
+   font: bold 16px sans-serif;
+   padding: 20px;
+   overflow: hidden;
  }
  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right{ 	display: inline-block;
  	vertical-align: top;
  }
- /* Footer left */
  .footer-distributed .footer-left{
  	width: 40%;
  }
- /* The company logo */
- .footer-distributed h3{ 	font: normal 36px, cursive; 	margin: 0; }
- /* Footer links */
- .footer-distributed .footer-links{ 		margin: 20px 0 12px; 	padding: 0; }
- .footer-distributed .footer-links a{ 	display:inline-block; 	line-height: 1.8;   font-weight:400; 	text-decoration: none; 	color:  inherit;
+ .footer-distributed h3{
+   font: normal 36px, cursive;
+   margin: 0;
  }
- .footer-distributed .footer-company-name{ 	 	font-size: 14px; 	font-weight: normal; 	margin: 0; }
- /* Footer Center */
+ .footer-distributed .footer-links{
+   margin: 20px 0 12px;
+   padding: 0;
+ }
+ .footer-distributed .footer-links a{
+   display:inline-block;
+   line-height: 1.8;
+   font-weight:400;
+   text-decoration: none;
+   color:  inherit;
+ }
+ .footer-distributed .footer-company-name{
+   font-size: 14px;
+   font-weight: normal;
+   margin: 0;
+ }
  .footer-distributed .footer-center{
- 	width: 35%;
+   width: 35%;
  }
 
- .footer-distributed .footer-center i{ 	background-color:  #003554; 	color: #ffffff; 	font-size: 17px; 	width: 20px; 	height: 20px;
- 	border-radius: 50%;
- 	text-align: center;
- 	line-height: 20px;
- 	margin: 8px 10px;
- 	vertical-align: middle;
+ .footer-distributed .footer-center i{
+   background-color:  #003554;
+   color: #ffffff;
+   font-size: 17px;
+   width: 20px;
+   height: 20px;
+ 	 border-radius: 50%;
+   text-align: center;
+   line-height: 20px;
+   margin: 8px 10px;
+   vertical-align: middle;
  }
-
 
  .footer-distributed .footer-center p{
- 	display: inline-block;
- 	color: #ffffff;
+   display: inline-block;
+   color: #ffffff;
    font-weight:400;
- 	vertical-align: middle;
- 	margin:0;
+   vertical-align: middle;
+   margin:0;
  }
 
  .footer-distributed .footer-center p span{
- 	display:block;
- 	font-weight: normal;
- 	font-size:14px;
- 	line-height:2;
+   display:block;
+   font-weight: normal;
+   font-size:14px;
+   line-height:2;
  }
 
- .footer-distributed .footer-center p a{   color: white; 	text-decoration: none; }
+ .footer-distributed .footer-center p a{
+   color: white;
+   text-decoration: none;
+ }
 
  .footer-distributed .footer-links a:before {
    content: "|";
@@ -112,11 +327,16 @@ li a:hover {  opacity: 0.5;
    content: none;
  }
 
- /* Footer Right */
-
  .footer-distributed .footer-right{
  	width: 20%;
  }
 
- .footer-distributed .footer-company-about{ 	line-height: 20px; 	font-size: 13px; 	font-weight: normal; 	margin: 0 }
- .footer-distributed .footer-icons{ 	margin-top: 25px; }
+ .footer-distributed .footer-company-about{
+   line-height: 20px;
+   font-size: 13px;
+   font-weight: normal;
+   margin: 0;
+  }
+ .footer-distributed .footer-icons{
+   margin-top: 25px;
+ }
