@@ -6,20 +6,19 @@ h1, h2, p {
     text-align: justify;
     font-size: 0.9em;
 }
-.menu{display:none;}
-#mobilemenu{display:none;}
-p{line-height: 2em;}
+.topnavSmartphone{display: none;}
+
+p{line-height: 1.5em;}
 div{height: 100vh; width: 100vw;}
-#horizontalmenu { background-color: #051923; opacity: 0.9;list-style-type: none;  margin: 0;  padding: 0;  overflow: hidden;  position: fixed; z-index:1; width: 100%; }
+#horizontalmenu { background-color: #051923; opacity: 0.8;list-style-type: none;  margin: 0;  padding: 0;  overflow: hidden;  position: fixed; z-index:1; width: 100%; }
 li {  float: left;
 }
 li a {  opacity: 1;display: block;  padding: 8px;  font-weight: bold;  color: white;  text-decoration: none;
 }
 li a:hover {  opacity: 0.5;
 }
-#santamariadileucapiccola{display:none;}
 #homepage{background-color: #003554; height: 30em; width: 100%; position: relative;}
-#name{ font-weight: bold; font-size: 2.5em; position: absolute; top: 2.8em; margin-left: 50%; margin-right:2em; display: inline-block; float: left; }
+#name{ font-weight: bold; font-size: 3em; position: absolute; top: 2.8em; margin-left: 50%; padding-right:1em; display: inline-block; float: left; }
 #name #cognome {color: rgb(17,138,178);}
 #stoccolmabackground {width: 100vw; height: 100vh; z-index: -1; opacity: 0.7;}
 #socialmedialinks{position: absolute; top: 16em; margin-left: 50%;}
@@ -37,19 +36,19 @@ li a:hover {  opacity: 0.5;
 #aboutTextTitle{top: 1.6em;#051923; margin-left: 60%; font-size:2.5em; color: #00a6fb;}
 .aboutText a{color:#00a6fb}
 #career{ background-color:#006494; height: 30em; width: 100%; position:relative;}
-#articleBox{position: absolute; top: 5em; margin-left: 7%; width: 26vw; height: auto; background-color: #FFFFF0; border-radius: 1em;}
-#carsharing{display:block;margin: 2vh auto; width: 23vw; height: auto;  border-radius: 0.7em;}
+#articleBox{position: absolute; top: 5em; margin-left: 7%; width: 26vw; height: 65vh; background-color: #FFFFF0; border-radius: 1em;}
+#carsharing{display:block;margin: 2vh auto;width: 23vw; height: auto;  border-radius: 0.7em;}
 #articleBox p{font-size: 0.7em; margin-left: 1vw; color: black; margin-right: 1vw;}
 #articleBox a{color: #006494; font-style: bold;}
 #careerText{margin-left: 47%; margin-right: 5%; position: absolute; top: 6.5em;}
 #careerText a{color: #00a6fb}
 #travel{background-color: #0582ca; position: relative;  height: 30em; width: 100%; }
-.pictures{position: absolute; width: 20vw; height: auto;box-shadow: 8px 8px 3px #051923/*#888888*/;}
-.pictures:hover{width:33vw; height: auto; z-index:1; box-shadow: none;}
- #verona{ top: 9vh; margin-left: 5%; transform: rotate( 5deg); -ms-transform: rotate(5deg); -webkit-transform: rotate(5deg);}
- #meteora{top: 9vh; margin-left: 27%;transform: rotate( -5deg); -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg);}
- #stoccolma{ top: 51vh; margin-left: 7%; transform: rotate( -3deg); -ms-transform: rotate(-3deg); -webkit-transform: rotate(-3deg);}
- #plitvice{ top: 51vh; margin-left: 30%; transform: rotate( 2deg); -ms-transform: rotate(2deg); -webkit-transform: rotate(2deg);}
+.pictures{position: absolute; max-width: 40%; max-height: 40%;box-shadow: 8px 8px 3px #051923/*#888888*/;}
+.pictures:hover{max-width: 70%; max-height: 70%; z-index:1; box-shadow: none;}
+ #verona{ top: 2em; margin-left: 5%; transform: rotate( 5deg); -ms-transform: rotate(5deg); -webkit-transform: rotate(5deg);}
+ #meteora{top: 2em; margin-left: 27%;transform: rotate( -5deg); -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg);}
+ #stoccolma{ top: 14em; margin-left: 7%; transform: rotate( -3deg); -ms-transform: rotate(-3deg); -webkit-transform: rotate(-3deg);}
+ #plitvice{ top: 14em; margin-left: 30%; transform: rotate( 2deg); -ms-transform: rotate(2deg); -webkit-transform: rotate(2deg);}
  .footer-distributed{	height: 37vh; width: 100%; background-color: #00a6fb;	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12); 	box-sizing: border-box;
  	text-align: left; 	font: bold 16px sans-serif; 	padding: 20px; overflow: hidden;
  }
@@ -120,3 +119,166 @@ li a:hover {  opacity: 0.5;
 
  .footer-distributed .footer-company-about{ 	line-height: 20px; 	font-size: 13px; 	font-weight: normal; 	margin: 0 }
  .footer-distributed .footer-icons{ 	margin-top: 25px; }
+
+
+ @media (max-width: 880px) {
+
+ 	.footer-distributed{
+ 		font: bold 14px sans-serif;
+ 	}
+
+ 	.footer-distributed .footer-left,
+ 	.footer-distributed .footer-center,
+ 	.footer-distributed .footer-right{
+ 		display: block;
+ 		width: 100%;
+ 		margin-bottom: 40px;
+ 		text-align: center;
+ 	}
+
+ 	.footer-distributed .footer-center i{
+ 		margin-left: 0;
+ 	}
+
+ }
+ #menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}

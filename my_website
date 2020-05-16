@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang = "it">
+<head>
+	<meta charset="utf-8">
+	<title>CV</title>
+	<link rel="stylesheet" type="text/css" href="mywebsite.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<p>Note: We use href="#" for test links. In a real web site this would be URLs.</p>
+
+</body>
+</html>

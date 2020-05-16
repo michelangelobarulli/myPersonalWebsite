@@ -9,6 +9,10 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 	<link href="http://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" media='screen and (min-width: 140px) and (max-width: 415px)' href="my_personal_website_mobile.css"/>
+	<link rel="stylesheet" media='screen and (min-width: 416px) and (max-width: 770px)' href="my_personal_website_tablet.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<style>
 	body {
     	font-family: 'Montserrat';font-size: 22px;
@@ -17,6 +21,7 @@
 
 </head>
 <body>
+
 <ul id="horizontalmenu">
 	<li><a href="#homepage">HOME</a></li>
   <li><a href="#about">ABOUT</a></li>
@@ -25,9 +30,11 @@
   <li><a href="#contacts">CONTACTS</a></li>
 </ul>
 <div id="homepage">
-	<img src="michelangelobarulli.png" alt="Michelangelo Barulli" id="pictureOfMe">
+	<img src="santamariadileuca.jpg" alt="Tramonto a Santa Maria di Leuca" id="stoccolmabackground">
+		<img src="santamariadileuca_piccola.jpg" alt="Tramonto a Santa Maria di Leuca" id="santamariadileucapiccola">
 
 	<h1 id ="name">MICHELANGELO<br><span id="cognome">BARULLI</span></h1>
+
 	<div id = "socialmedialinks">
 		<a href="https://www.facebook.com/michelangelo.barulli" class="fa fa-facebook"></a>
 		<a href="https://www.linkedin.com/in/michelangelo-barulli-591423195/" class="fa fa-linkedin"></a>
@@ -38,8 +45,9 @@
 	<!--<iframe id="playlist" src="https://open.spotify.com/embed/playlist/6qmN8XMmRJfzbYGQRqOs2x" width="280" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>-->
 	<img class = "pictures" id = "castiglioneDelLago" src="castiglioneDelLago.png" alt ="Panorama del Lago Trasimeno">
 	<img class = "pictures" id = "torino" src ="torino.png" alt ="Torino dal Monte dei Cappuccini">
-	<p id = "aboutText">Mi chiamo Michelangelo Barulli. Sono uno studente del Politecnico di Torino,
-	al terzo anno di Ingegneria Gestionale L9. Faccio parte del <a href="https://didattica.polito.it/percorso_giovani_talenti/home">
+	<!-- <h1 class ="aboutText" id="aboutTextTitle"> 546..</h1> -->
+	<p class= "aboutText">.. come i chilometri che separano casa mia da Torino, la città che amo e in cui sto studiando Ingegneria Gestionale.
+	Sono al terzo anno e faccio parte del <a href="https://didattica.polito.it/percorso_giovani_talenti/home">
 	Percorso per Giovani Talenti</a> finanziato
 	da CRT. Sono nato a Castiglione del Lago, sulle sponde del Lago Trasimeno.
 	Sono diplomato con votazione di 100 e lode presso il Liceo Scientifico Italo Calvino di Città della Pieve (PG).
@@ -97,5 +105,15 @@
 				</div>
 			</footer>
 </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 </body>
 </html>
